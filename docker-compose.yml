@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  web:
+    build: web-frontend
+    container_name: stellarsence-web
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+  api:
+    build: api-backend
+    container_name: stellarsence-api
+    ports:
+      - "5001:5000"

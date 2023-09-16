@@ -1,0 +1,5 @@
+flask
+pandas
+bcrypt
+numpy
+scikit-learn
